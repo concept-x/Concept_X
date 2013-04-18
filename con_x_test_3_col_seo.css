@@ -1,0 +1,256 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*UNIVERSAL STYLES BEGIN*/
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+@font-face {font-family: 'michroma';
+    src:url(Michroma.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+html{height:100%;
+	}/*instrumental in making wrapper fill viewport*/
+
+body{background:url(images/blublack.jpg) fixed;
+	color:#74BBFB;
+	height:100%;
+}
+
+h1{ font: 48px 'michroma';
+	text-align:center;
+}
+
+h2{font:24px 'michroma';
+	text-align:center;
+}
+
+h3{font:18px 'michroma';
+	text-align:center;
+}
+
+h4{font:14px 'michroma';
+	font-weight:bold;
+}
+
+p{font-family:Verdana, Geneva, sans-serif;
+	color:#74BBFB; /*cccbcd is a plain light grey*/
+}
+
+.designleft{float:left;
+			margin-right:3%;
+			margin-left:2%;
+			max-width:50%;
+			min-width:50%;
+			height:auto;
+		position:relative;
+		line-height:1.2em;
+		margin-bottom:16px;/*How can I keep the whitespace between paragraphs while scooting both images over to the right?*/
+}
+
+.designright{max-width:40%;
+		margin-right:3%;
+		height:auto;
+		border:1px solid #bababa;
+		
+	display:inline-block;
+	vertical-align:top;
+	padding:8px 0;
+	
+}
+
+.design_interior{height:auto;
+	overflow:hidden;/*SEEMS TO SOLVE ALL BOUNDING BOX PROBLEMS*/
+	/*border-top:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;*/
+	margin-bottom:25px;
+	position:relative;
+	/*box-shadow:2px 3px 3px #fff;*/
+	box-shadow:0 3px 6px #fff;
+}
+
+p:first-child{margin-top:4px;
+}
+
+.writing_int{height:auto;
+	overflow:hidden;
+	/*border-top:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;*/
+	margin-bottom:12px;
+	box-shadow:0 3px 6px #fff;/*keep this & do a backup for old browsers?*/
+}
+
+.writingleft{float:left;
+			margin-right:3%;
+			margin-left:2%;
+			min-width:50%;
+			max-width:50%;
+			height:auto;
+		
+		line-height:1.2em;
+		margin-bottom:16px;
+}
+
+.writingright{max-width:40%;
+			margin-right:3%;
+			height:auto;
+			border:1px solid #bababa;
+			display:inline-block;
+			vertical-align:top;
+}
+
+#wrapper{background-color:#000;
+			opacity:0.75;
+			min-height:100%;
+			height:100%;
+			height:auto !important;
+			position:relative;
+}
+
+.note{font-size:12px;
+		float:left;
+			margin-right:3%;
+			margin-left:2%;
+			min-width:50%;
+			max-width:50%;
+			height:auto;
+		
+		line-height:1.1em;
+		margin-bottom:16px;
+}
+
+.h4note{font-size:12px;
+			height:auto;
+		
+		line-height:1.2em;
+		margin-bottom:16px;
+		margin-top:10px;
+}
+/*img{max-width:40%;
+	height:auto;
+	width:auto\9; /*for IE 8; This is the ONLY thing causing this whole sheet not to validate
+	border:3px solid white;
+}*/
+
+a{text-decoration:none;
+	color:#74bbfb;
+}
+a:visited{color:#d3d3d3;
+}
+
+#placeholder{margin-bottom:25px;
+}
+/*UNIVERSAL STYLES END*/
+
+/*HOMEPAGE BEGIN*/
+#home #wrapper{padding:0 2%;
+			width:auto;/*to keep things responsive/scalable*/
+}
+
+#home #design{width:60%; 
+			min-width:60%;
+			float:left;
+			position:relative;
+			margin-left:3%;		
+}
+
+#home #writing{width:30%; 
+			min-width:30%;
+			float:right;
+			position:relative;
+			margin-right:3%;
+}
+
+#home #main{overflow:hidden;
+}
+
+#home footer{clear:both;
+	text-align:center;
+	margin-top:25px;
+	
+}
+
+.services{font-variant:small-caps;
+		font-size:0.8em;
+		max-width:50%;
+		margin-top:5%;
+}
+
+nav{border:#0ebfe9 groove;
+	padding:8px;
+	max-width:50%;
+	margin:auto;
+}
+
+li a{padding:6px;
+	margin-left:9%;
+}
+
+li.nav_list:first-child{margin-left:-8%;
+	color:#fff;/*coloring isn't working, but the margin rule seems to help the nav items space*/
+}
+
+li.nav_list{display:inline;
+padding:8px;/*keep or ditch? how close do you want the li to the border?*/
+}
+
+ul.nav_menu{text-align:center;
+background-image:url(images/blue_fiber_border.png);
+}
+.nav_menu{font:16px 'michroma';
+		font-weight:bold;
+}
+li a:visited{color:#999;
+}/*NEEDED TO MAKE NAV TEXT SHOW UP AGAINST BLUE FIBER BACKGROUND*/
+
+li a:hover{background-color:#000;
+}
+/*nav{background:url(file:///C|/Users/MLEMLE/Desktop/web_design/image_vault/textures/rosy_dress.jpg);
+}FILLS NAV BOX WITH IMAGE*/
+
+#bottom footer{clear:both;
+	text-align:center;
+	margin-top:25px;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	margin:auto;
+}
+
+#home .intro{padding:16px 0;
+			text-align:center;
+}
+
+/*HOMEPAGE END*/
+
+/*ABOUT PAGE BEGIN*/
+#about #wrapper{padding:0 2%;
+			width:auto;/*to keep things responsive/scalable*/
+}
+#about .intro{padding:16px 0;
+			text-align:center;
+}
+.intro{width:700px;
+		margin:auto;
+		line-height:1.2em;
+}
+/*ABOUT PAGE END*/
+
+/*RESUME & SERVICES PAGE BEGIN*/
+#res_svcs #wrapper{padding:0 2%;
+			width:auto;/*to keep things responsive/scalable*/
+}
+
+#res_svcs .intro{padding:16px 0;
+			text-align:center;
+}
+
+#res_svcs #main ul li{line-height:1.2em;
+				font-family:Verdana, Geneva, sans-serif;
+				text-align:center;
+}
+#res_svcs h3{margin-bottom:20px;
+}
+#res_svcs ul{list-style-type:none;
+}
+/*RESUME & SERVICES PAGE END*/
