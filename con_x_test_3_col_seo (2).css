@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*UNIVERSAL STYLES BEGIN*/
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+@font-face {font-family: 'michroma';
+    src:url(Michroma.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+html{height:100%;
+}/*instrumental in making wrapper fill viewport*/
+
+body{background:url(images/blublack.jpg) fixed;
+	color:#74BBFB;
+	height:100%;
+}
+
+h1{ font: 48px 'michroma';
+	text-align:center;
+}
+
+h2{font:24px 'michroma';
+	text-align:center;
+}
+
+h3{font:18px 'michroma';
+	text-align:center;
+}
+
+h4{font:14px 'michroma';
+	font-weight:bold;
+}
+
+p{font-family:Verdana, Geneva, sans-serif;
+	color:#74BBFB; /*cccbcd is a plain light grey*/
+}
+
+.designleft{float:left;
+			margin-right:3%;
+			margin-left:2%;
+			max-width:50%;
+			min-width:50%;
+			height:auto;
+		border:1px solid red;
+		line-height:1.2em;
+		margin-bottom:16px;/*How can I keep the whitespace between paragraphs while scooting both images over to the right?*/
+}
+
+.designright{max-width:40%;
+		margin-right:3%;
+		height:auto;
+	border:1px solid green;
+	display:inline-block;
+	vertical-align:top;
+	padding:8px 0;
+}
+
+.design_interior{height:auto;
+	overflow:hidden;/*SEEMS TO SOLVE ALL BOUNDING BOX PROBLEMS*/
+	border:2px solid blue;
+	margin-bottom:25px;
+	position:relative;
+}
+
+p:first-child{margin-top:4px;
+}
+
+.writing_int{height:auto;
+	overflow:hidden;
+	border:2px solid green;
+	margin-bottom:12px;
+}
+
+.writingleft{float:left;
+			margin-right:3%;
+			margin-left:2%;
+			min-width:50%;
+			max-width:50%;
+			height:auto;
+		border:1px solid red;
+		line-height:1.2em;
+		margin-bottom:16px;
+}
+
+.writingright{max-width:40%;
+			margin-right:3%;
+			height:auto;
+			border:3px solid white;
+			display:inline-block;
+			vertical-align:top;
+}
+
+#wrapper{background-color:#000;
+			opacity:0.75;
+			min-height:100%;
+			height:100%;
+			height:auto !important;
+}
+
+.note{font-size:12px;
+		float:left;
+			margin-right:3%;
+			margin-left:2%;
+			min-width:50%;
+			max-width:50%;
+			height:auto;
+		border:1px solid red;
+		line-height:1.1em;
+		margin-bottom:16px;
+}
+
+.h4note{font-size:12px;
+			height:auto;
+		border:1px solid red;
+		line-height:1.2em;
+		margin-bottom:16px;
+		margin-top:10px;
+}
+/*img{max-width:40%;
+	height:auto;
+	width:auto\9; /*for IE 8; This is the ONLY thing causing this whole sheet not to validate
+	border:3px solid white;
+}*/
+
+a{text-decoration:none;
+}
+a:visited{color:#070cc7;
+}
+/*UNIVERSAL STYLES END*/
+
+/*HOMEPAGE BEGIN*/
+#home #wrapper{padding:0 2%;
+			width:auto;/*to keep things responsive/scalable*/
+}
+
+#home #design{width:60%; 
+			min-width:60%;
+			float:left;
+			border:3px solid white;
+			margin-left:3%;		
+}
+
+#home #writing{width:30%; 
+			min-width:30%;
+			float:right;
+			border:3px solid red;
+			margin-right:3%;
+}
+
+#home #main{border:1px solid gray;
+			overflow:hidden;}
+
+.services{font-variant:small-caps;
+		font-size:0.8em;
+		max-width:50%;
+		margin-top:5%;
+}
+
+nav{border:#0ebfe9 groove;
+	padding:8px;
+	max-width:50%;
+	margin:auto;
+}
+
+li a{padding:6px;
+	margin-left:9%;
+}
+
+li.nav_list:first-child{margin-left:-8%;
+	color:#fff;/*coloring isn't working, but the margin rule seems to help the nav items space*/
+}
+
+li.nav_list{display:inline;
+padding:8px;/*keep or ditch? how close do you want the li to the border?*/
+}
+
+ul.nav_menu{text-align:center;
+background-image:url(images/blue_fiber_border.png);
+}
+.nav_menu{font:16px 'michroma';
+		font-weight:bold;
+}
+li a:visited{color:#999;
+}/*NEEDED TO MAKE NAV TEXT SHOW UP AGAINST BLUE FIBER BACKGROUND*/
+
+li a:hover{background-color:#f00;
+}
+/*nav{background:url(file:///C|/Users/MLEMLE/Desktop/web_design/image_vault/textures/rosy_dress.jpg);
+}FILLS NAV BOX WITH IMAGE*/
+
+/*
+#intro{position:relative;
+	margin:auto;
+	width:800px;/*PICK UP HERE. POSITION FLOURISHES TO LEFT AND RIGHT OF INTRO TEXT.
+}
+.intro{	position:relative;
+margin:auto;
+		left:120px;
+		top:100px;
+		width:600px;
+}*/
+
+.brf{position:relative; /*FLOURISH POSITIONING*/
+	left:300px;
+	
+}
+			
+footer{clear:both;
+}
+/*HOMEPAGE END*/
+
+/*ABOUT PAGE BEGIN*/
+#about #wrapper{padding:0 2%;
+			width:auto;/*to keep things responsive/scalable*/
+}
+
+.intro{width:700px;
+		margin:auto;
+		line-height:1.2em;
+}
+/*ABOUT PAGE END*/
+
+/*RESUME & SERVICES PAGE BEGIN*/
+#res_svcs #wrapper{padding:0 2%;
+			width:auto;/*to keep things responsive/scalable*/
+}
+/*RESUME & SERVICES PAGE END*/
