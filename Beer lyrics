@@ -1,0 +1,14 @@
+puts 'How many bottles of beer would you like to start with?'
+n=gets.chomp
+
+while n.to_i > 0
+
+	puts n.to_s + ' bottles of beer on the wall, ' + n.to_s + ' bottles of beer,'
+	puts 'take one down, pass it around, '
+
+	n = n.to_i-1
+
+	puts n.to_s + ' bottles of beer on the wall'
+end
+
+puts 'No more bottles of beer on the wall!'
