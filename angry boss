@@ -1,0 +1,5 @@
+echo=gets.upcase.chomp
+echo_quote= echo + '?!?'
+fired='" you\'re fired!!!'.upcase
+mean='whaddya mean, "'.upcase
+puts mean + echo_quote + fired
